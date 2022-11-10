@@ -1,0 +1,67 @@
+@media (max-width:950px) {
+    /* Realizamos el responsive cuando la pantalla alcance el tamaño
+        indicado en el media query.*/
+    
+    .enlace{
+        /* Acomodamos el elemento */
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+        margin-left: 91%;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 100px;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: #CF0A0A;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        z-index: 1;
+    }
+
+    .crash{
+        margin-left: 10%;
+        margin-top: 60px;
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    .texto{
+        display: flex;
+        color: #CF0A0A;
+        margin-top: 50px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+}
